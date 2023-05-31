@@ -84,6 +84,11 @@ section {
   text-align: center;
 }
 
+section h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: -6px 3px 14px rgba(0, 0, 0, 0.68);
+}
 section#home {
   background: rgb(9, 8, 115);
   background: linear-gradient(
@@ -95,6 +100,7 @@ section#home {
 
 /* Project section styles */
 section#projects {
+    padding-top: 100px;
   background: rgb(9, 8, 115);
   background: linear-gradient(
     0deg,
@@ -160,6 +166,7 @@ section#projects {
 
 /* Contact section styles */
 section#contact {
+    padding-top: 120px;
   background: rgb(9, 8, 115);
   background: linear-gradient(
     180deg,
@@ -171,7 +178,7 @@ section#contact {
 h2.contact-title {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
+  color:#fef;
 }
 
 .contact-form {
