@@ -6,17 +6,23 @@
   margin: 0;
   padding: 0;
   font-family: "Armata", sans-serif;
+  /* background: #ffe1e157;
+    background: url('/image/bg01.png');
+  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgba(230, 230, 230, 0.8);
 }
 
 /* Navigation styles */
 nav {
   text-align: center;
-  height: 50px;
+  height: 70px;
   padding: 20px 40px;
   margin-bottom: 30px;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: rgba(230, 230, 230, 0.8);
   z-index: 100;
   box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
 }
@@ -44,6 +50,12 @@ nav ul li a {
 
 section{
   height: 100vh;
+
+  /* background: url('/image/bg01.png');
+  background-repeat: no-repeat, repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(230, 230, 230, 0.8); */
 }
 
 h1{
@@ -58,13 +70,9 @@ h1{
   margin: 100px 0 50px 0;
 } */
 
-#home{
-  background: url('/image/bg01.png');
-  background-repeat: no-repeat, repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(230, 230, 230, 0.8);
-}
+/* #home{
+
+} */
 
 #home h2{
   font-size: 28px;
@@ -87,6 +95,7 @@ h1{
 .hero-pic img{
   max-width: 100%;
   border-radius: 50%;
+  border: 1px solid #000;
   box-shadow: 10px 10px 29px 2px rgba(0,0,0,0.55);
   background-color: #efefef9c;
 }
@@ -95,11 +104,12 @@ h1{
   margin: 100px 20px;
   text-align: left;
   width: 100%;
-  background-color: #efefef9c;
+  background-color: rgba(230, 230, 230, 0.8);
 }
 
 .subtitle{
   text-align: center;
+  text-transform: uppercase;
   font-size: 28px;
   line-height: 50px;
   text-decoration: underline;
@@ -112,7 +122,7 @@ h1{
 
 
 #projects{
-  background-color: aquamarine;
+  background-color: rgba(230, 230, 230, 0.8);
 }
 
 /* #projects h1 {
