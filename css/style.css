@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Armata&display=swap");
+
 /* Reset default styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Armata", sans-serif;
 }
 
 /* Body styles */
@@ -22,16 +25,51 @@ body {
         margin-bottom: 30px;
       } */
 
-.hero-box {
-  padding: 30px 60px;
-  border-radius: 20px;
-  box-shadow: 10px 10px 52px 0px rgba(0, 0, 0, 0.75);
-}
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 10px;
   color: #f9f9f9;
   text-shadow: -6px 3px 14px rgba(0, 0, 0, 0.68);
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.hero-box {
+  display: flex;
+  padding: 10px 60px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 52px 0px rgba(0, 0, 0, 0.75);
+  max-height: 50%;
+}
+
+.hero-pic {
+  margin: 0 50px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #fef;
+}
+.hero-pic img {
+  border-radius: 50%;
+  border: 1px solid #010;
+  max-width:75%;
+}
+
+.hero-desc {
+  margin: 80px 0;
+  width: 100%;
+}
+.hero-desc .subtitle {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+}
+.hero-desc p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 50px 30px;
 }
 
 p.subtitle {
@@ -84,10 +122,10 @@ section {
   text-align: center;
 }
 
-section h2{
-    font-size: 40px;
-    text-transform: uppercase;
-    text-shadow: -6px 3px 14px rgba(0, 0, 0, 0.68);
+section h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: -6px 3px 14px rgba(0, 0, 0, 0.68);
 }
 section#home {
   background: rgb(9, 8, 115);
@@ -100,7 +138,7 @@ section#home {
 
 /* Project section styles */
 section#projects {
-    padding-top: 100px;
+  padding-top: 100px;
   background: rgb(9, 8, 115);
   background: linear-gradient(
     0deg,
@@ -166,7 +204,7 @@ section#projects {
 
 /* Contact section styles */
 section#contact {
-    padding-top: 120px;
+  padding-top: 120px;
   background: rgb(9, 8, 115);
   background: linear-gradient(
     180deg,
@@ -178,7 +216,7 @@ section#contact {
 h2.contact-title {
   font-size: 24px;
   margin-bottom: 20px;
-  color:#fef;
+  color: #fef;
 }
 
 .contact-form {
@@ -209,3 +247,94 @@ h2.contact-title {
 .contact-form button[type="submit"]:hover {
   background-color: #555;
 }
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  .hero-box {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p.subtitle {
+    font-size: 16px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  section#projects {
+    padding-top: 80px;
+  }
+
+  .project-card {
+    margin: 10px;
+  }
+
+  .project-card img {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+  }
+}
+
+/* @media only screen and (max-width: 480px) { */
+  /* Adjust styles for even smaller screens */
+
+  /* h1 {
+    font-size: 20px;
+  }
+
+  p.subtitle {
+    font-size: 14px;
+  }
+
+  section#home {
+    padding: 20px;
+  }
+
+  section#projects {
+    padding-top: 60px;
+  }
+
+  .project-card {
+    padding-top: 20px;
+  }
+
+  .project-details {
+    padding: 5px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: 8px;
+  }
+
+  .contact-form button[type="submit"] {
+    padding: 8px 16px;
+  } */
+/* } */
